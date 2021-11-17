@@ -4,7 +4,11 @@
 
 This project is a pokedex REST API.
 
-The project created with NodeJS, ExpressJS, and was implemented based on the clean architecture model.
+### Technologies
+
+- REST API - Created with NodeJs and ExpressJS
+- DB - The data is stored with MongoDB
+- Architecture - Based on the clean architecture model
 
 The api has 2 entrypoints
 
