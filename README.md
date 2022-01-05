@@ -16,7 +16,6 @@ This project is the backend of the pokedex project. The backend is a REST API
 
 ### Pokemons api
 
-```markdown
 | Name              | Method | Description            |
 | ----------------- | ------ | ---------------------- |
 | `api/v1/pokemons` | GET    | lists all the pokemons |
@@ -28,23 +27,18 @@ This project is the backend of the pokedex project. The backend is a REST API
 | offset | Integer   | Optional            | Offset the list of returned pokemons results by this number; defaults is 0 |
 | limit  | Integer   | Optional            | Number of pokemons to retrieve; defaults is 20                             |
 | search | String    | Optional            | lets you search for a pokemon by name                                      |
-```
 
 ### Pokemon detail api
 
-```markdown
 | Name                    | Method | Description                                                    |
 | ----------------------- | ------ | -------------------------------------------------------------- |
 | `api/v1/pokemons/:name` | GET    | shows an information about the pokemon based on the given name |
-```
 
 ### Evolution api
 
-```markdown
 | Name                             | Method | Description                           |
 | -------------------------------- | ------ | ------------------------------------- |
 | `api/v1/evolutions/:evolutionId` | GET    | retrive the pokemon's evolution by id |
-```
 
 ## Usage
 
