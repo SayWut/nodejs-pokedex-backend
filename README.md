@@ -2,7 +2,9 @@
 
 ## About
 
-This project is a pokedex REST API.
+This project is the backend of the pokedex project. The backend is a REST API
+
+[The frontend of the project](https://github.com/SayWut/flutter-pokedex-frontend)
 
 ### Technologies
 
@@ -10,10 +12,39 @@ This project is a pokedex REST API.
 - DB - The data is stored with MongoDB
 - Architecture - Based on the clean architecture model
 
-The api has 2 entrypoints
+## Entrypoints
 
-- `api/v1/pokemon` - lists all the pokemons
-- `api/v1/pokemon/:id` - shows an information about the pokemon based on the given id
+### Pokemons api
+
+```markdown
+| Name              | Method | Description            |
+| ----------------- | ------ | ---------------------- |
+| `api/v1/pokemons` | GET    | lists all the pokemons |
+
+### Parameters
+
+| Name   | Data Type | Required / Optional | Description                                                                |
+| ------ | --------- | ------------------- | -------------------------------------------------------------------------- |
+| offset | Integer   | Optional            | Offset the list of returned pokemons results by this number; defaults is 0 |
+| limit  | Integer   | Optional            | Number of pokemons to retrieve; defaults is 20                             |
+| search | String    | Optional            | lets you search for a pokemon by name                                      |
+```
+
+### Pokemon detail api
+
+```markdown
+| Name                    | Method | Description                                                    |
+| ----------------------- | ------ | -------------------------------------------------------------- |
+| `api/v1/pokemons/:name` | GET    | shows an information about the pokemon based on the given name |
+```
+
+### Evolution api
+
+```markdown
+| Name                             | Method | Description                           |
+| -------------------------------- | ------ | ------------------------------------- |
+| `api/v1/evolutions/:evolutionId` | GET    | retrive the pokemon's evolution by id |
+```
 
 ## Usage
 
